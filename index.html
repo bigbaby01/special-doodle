@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>instagram like</title>
+    <link rel="stylesheet" href="C:\Users\shubham\Desktop\projects\profie card\fontawesome-free-5.12.1-web\css\all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="card">
+            <img src="1.webp" alt="" ondblclick="heart()">
+            <i class="fas fa-heart fa-3x"></i>
+        </div>
+    </div>
+    <script>
+    function heart(){
+        var x =document.querySelector(".fas");
+        x.classList.add("heart");
+        setTimeout(function(){
+            x.classList.remove("heart");
+        },1000);
+    }
+    </script>
+</body>
+</html>
